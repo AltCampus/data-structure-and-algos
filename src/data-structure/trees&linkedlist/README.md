@@ -1,10 +1,19 @@
 # Trees & linked List
 
+LINKED LIST
+Comprised of nodes that represent a sequence.
+Each node is composed of data and a reference/link to the next node.
+
 
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+
+
+
+
 
 ### Prerequisites
 
