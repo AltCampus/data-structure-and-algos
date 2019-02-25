@@ -1,3 +1,6 @@
+
+# (Please go through the PDF version as it is much easier to read)
+
 # Sorting
 
 Sorting refers to arranging data in a particular format. Sorting algorithm specifies the way to arrange data in a particular order. Most common orders are in numerical or lexicographical order.
@@ -41,19 +44,20 @@ There are a lot of sorting algorithms & their variations present in usage. We wi
     * Quick sort
     * Merge sort 
     * Heap sort
-    * Shell sort .. 
+    * Shell sort ....
 
+###### Please go through these articles to understand how these sorts work and then head to assignments
 
+##### Bubble sort - [Link](https://www.geeksforgeeks.org/bubble-sort/)
+##### Selection sort - [Link](https://www.geeksforgeeks.org/bubble-sort/)
+##### Insertion sort - [Link](https://www.geeksforgeeks.org/bubble-sort/)  
+-
 
-
-
+_______________________________________________________________________
 
 ### Further Reading(Optional)
 [MIT Sorting Lecture Content ](http://web.mit.edu/1.124/LectureNotes/sorting.html)
 (Make sure to read the last section which explains **"How to select a sorting algorithm"** )
 [Geekforgeek - Time complexity of all the sorting algoritms](https://www.geeksforgeeks.org/time-complexities-of-all-sorting-algorithms/)
-
-
-
 
 
