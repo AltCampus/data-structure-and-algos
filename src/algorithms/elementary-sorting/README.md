@@ -49,8 +49,8 @@ There are a lot of sorting algorithms & their variations present in usage. We wi
 ###### Please go through these articles to understand how these sorts work and then head to assignments
 
 ##### Bubble sort - [Link](https://www.geeksforgeeks.org/bubble-sort/)
-##### Selection sort - [Link](https://www.geeksforgeeks.org/bubble-sort/)
-##### Insertion sort - [Link](https://www.geeksforgeeks.org/bubble-sort/)  
+##### Selection sort - [Link](https://www.geeksforgeeks.org/selection-sort/)
+##### Insertion sort - [Link](https://www.geeksforgeeks.org/insertion-sort/)  
 -
 
 _______________________________________________________________________

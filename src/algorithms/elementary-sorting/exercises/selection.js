@@ -1,30 +1,37 @@
-/*
-SELECTION SORT
+var arr = Array(10).fill();
 
-*** Description
+var randomArray = arr.map(item=>Math.round(Math.random()*100));
+var sortedArray = arr.map((item,index)=>index*10);
+var reverseArray = arr.map((item,index,array)=>(array.length-index)*10);
+var DoubleLengthArray = randomArray.concat(randomArray);
 
-Iterate over array and grow a sorted array behind current element.
 
-For each position, find the smallest element in unsorted subarray starting at that position, and swap elements so that smallest element is at the beginning of unsorted subarray.
+// Exercise 0:
+// Write psuedo code for selection sort(Link to some Psuedocode examples - https://www.unf.edu/~broggio/cop2221/2221pseu.htm)
 
-example:
-[ 1 2 3|9 5 7 4 ]
- sorted|unsorted
-smallest element in unsorted subarray is 4
-swap with element at beggining of unsorted subarray
-sorted portion has now grown:
-[ 1 2 3 4|5 7 9 ]
 
-*** Exercises
 
-- Implement selection sort
-- Identify time complexity
+// Exercise 1:
+// Implement selection sort
+// Sort all above Arrays using selection sort
 
-Stable Variant
-- Implement as a stable sort - rather than swapping, the minimum value is inserted into the first position and all other items are shifted one to the right. How does this impact performance?
-- Modify function to take comparator function. specify default if not provided (check out native Array.sort comparator function for reference)
-- Use your comparator function to verify that your sort is stable by taking input: [{value: 15}, {value: 10, order: 1}, {value: 10, order: 2}]
 
-- Implement selection sort for a linked list (you can use your data structure implemention from earlier in the course). How does this impact performance and stability?
 
-*/
+// Exercise 3:(Optional)
+// Modify the above code to take a comparison function and sort accordingly
+// Use it to sort the below array using a comparison to sort according to the height
+
+var students = [{name:'Sam', age: 22, height: 178},
+								{name:'Thomas', age: 24, height: 173},
+								{name:'Jackson', age: 25, height: 188},
+								{name:'Paul', age: 27, height: 173},
+								{name:'Aaron', age: 27, height: 167}];
+
+// comparison function
+
+// selection sort
+
+// Exercise 4: (Optional)
+// As seen in Exercise 3, the above implementation is not stable.
+// Implement as a stable sort - rather than swapping, the minimum value is inserted into the first position and all other items are shifted one to the right. How does this impact performance?
+

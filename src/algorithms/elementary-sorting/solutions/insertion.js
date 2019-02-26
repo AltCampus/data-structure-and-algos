@@ -1,31 +1,71 @@
-/*
-INSERTION SORT
 
-*** Description
+var arr = Array(10).fill();
 
-Iterate over array and grow a sorted array behind current element.
+var randomArray = arr.map(item=>Math.round(Math.random()*100));
+var sortedArray = arr.map((item,index)=>index*10);
+var reverseArray = arr.map((item,index,array)=>(array.length-index)*10);
+var DoubleLengthArray = randomArray.concat(randomArray);
 
-For each position, compare value of element with previous elements and swap positions if previous element is larger.
 
-example:
-[ 3 4 5|1 2 6 ]
- sorted|unsorted
-swaps:
-[ 3 4 1 5|2 6 ]
-[ 3 1 4 5|2 6 ]
-[ 1 3 4 5|2 6 ]
-now repeat for next unsorted element
+// Exercise 0:
+// Write psuedo code for insertion sort(Link to some Psuedocode examples - https://www.unf.edu/~broggio/cop2221/2221pseu.htm)
 
-*** Exercises
+// K start with 1
+// While k is less than the array length
+//    key is array[k]
+// 		j is key - 1
+// 		while j is greater or equal to zero and key is less than array[j]
+// 			array[j+1] = array[j]
+// 			increment j
+// 		array[j] = key;			
+// 		increment k
 
-- Implement insertion sort for array of numbers
-- Identify time complexity
 
-- Modify function to take comparator function. specify default if not provided (check out native Array.sort comparator function for reference)
-- Use your comparator function to verify that your sort is stable by taking input: [{value: 15}, {value: 10, order: 1}, {value: 10, order: 2}]
+// Exercise 1:
+// Implement insertion sort
+// Sort all above Arrays using insertion sort
 
-*** Extra credit
-- Implement shell sort, a generalization of insertion sort
-(https://en.wikipedia.org/wiki/Shellsort)
+function insertionSort(array){
+	let len = array.length;
+	let k = 1;
+	while (k<len) {
+		let key = array[k];
+		let j = k-1;
+		while(j>=0 && key<array[j]){
+			array[j+1]=array[j];
+			j--;
+		}
+		array[j+1] = key;
+		k++;
+	}
+	return array;
+}
 
-*/
+
+// Exercise 2:
+// Add a variable called counter and initialize it to 0;
+// Increment counter within the innermost for loop(but outside if-else statements) & 
+// print out the counter value at the end.
+// Observe the counter value of all the array & try to calculate the time complexity
+
+function insertionSort(array){
+	let len = array.length;
+	let k = 1;
+	let counter = 0;
+	while (k<len) {
+		let key = array[k];
+		let j = k-1;
+		while(j>=0 && key<array[j]){
+			array[j+1]=array[j];
+			j--;
+			counter++;
+		}
+		array[j+1] = key;
+		k++;
+	}
+	console.log(counter)
+	return array;
+}
+
+
+
